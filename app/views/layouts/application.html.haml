@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title CookbookRails
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    %nav.nav-wrapper.teal.lighten-4
+      %a.brand-logo{ href: "#" }
+        Logo
+      %ul.right.hide-on-med-and-down
+        %li
+          %a{ href: '#' }
+            Test
+        %li
+          %a{ href: '#' }
+            Test
+        %li
+          %a{ href: '#' }
+            Test
+    = yield
